@@ -1,0 +1,188 @@
+body{
+	background: #f8f9fd;
+}
+
+.s1{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	&-violet{
+		color: #4a52d0;
+	}
+	&-proz{
+		opacity: .6;
+	}
+	&-title{
+		font-family: "Russo One";
+		font-size: 30pt;
+		padding-bottom: 20px;
+	}
+	&-rs{
+		align-items: center;
+	}
+	&-subtitle{
+		display: flex;
+		justify-content: space-between;
+		font-family: "Russo One";
+		background: #fff;
+		border: 2px solid rgba(0,0,0,.2);
+		border-radius: 3px;
+		&-text{
+			word-wrap: break-word;
+			&-rs{
+				padding-top: 30px;
+				padding-left: 25px;
+				padding-bottom: 100px;
+				font-size: 20pt;
+				text-transform: uppercase;
+
+			}
+		}
+		&-img{
+			position: absolute;
+			right: -70px;
+			top: 0;
+			height: 220pt;
+			&-image{
+				height: 100%;
+			}
+		}
+	}
+	&-topy{
+		display: flex;
+		justify-content: space-around;
+		font-family: "Montserrat";
+		font-weight: 400;
+		z-index: 9999;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		&-blok{
+			padding: 20px;
+			background: #fff;
+			border: 2px solid rgba(0,0,0,.3);
+			border-radius: 3px;
+			transition: .3s;
+			&:hover{
+				background: #4a52d0 !important;
+				transition: .3s;
+				color: #fff !important;
+			}
+			&-title{
+				font-size: 20pt;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+			&-subtitle{
+				font-size: 8pt;
+				padding-top: 10px;
+				&-date{
+					font-size: 8pt;
+					text-transform: uppercase;
+					padding-top: 10px;
+				}
+				&-runet{
+					display: flex;
+					justify-content: center;
+					font-weight: 700;
+					padding-top: 20px;
+					&-img{
+						bottom: 0;
+						height: 15pt;
+						padding-right: 5px;
+						&-image{
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}
+.s2{
+	&-imgs{
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 16px;
+		&-image{
+			height: 20rem;
+			width: 50%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: #fff;
+			font-family: "Montserrat";
+			font-weight: 400;
+			font-size: 10pt;
+			margin-left: 8px;
+			margin-right: 8px;
+			&-w30{
+				width: 33%;
+			}
+			&-text{
+				background: rgba(74, 82, 208, .5);
+				height: 20rem;
+				width: 100%;
+				padding-top: 15px;
+				padding-left: 15px;
+				&-title{
+					width: 30%;
+					padding-bottom: 15px;
+					&-img{
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+	}
+	&-buttonDiv{
+		text-align: center;
+		padding-top: 30px;
+		&-btn{
+			display: inline-block;
+			padding: 10px 30px;
+			background: #4a52d0;
+			color: #fff;
+			text-decoration: none;
+			border: 2px solid rgba(0,0,0,.0);
+			transition: .3s;
+			&:hover{
+				text-decoration: none;
+				color: #000;
+				background: #fff;
+				border: 2px solid rgba(0,0,0,.5);
+				transition: .3s;
+			}
+		}
+	}
+	&-begstr{
+		padding-bottom: 30px;
+		padding-top: 50px;
+	}
+}
+
+.marquee {
+   margin: 0 auto;
+   font-size:26pt;
+   color:#4a52d0;
+   white-space: nowrap;
+   overflow: hidden;
+   font-family: "Russo One";
+   text-transform: uppercase;
+}
+
+.marquee span {
+   display: inline-block;
+   padding-left: 100%;
+   animation: marquee 10s linear infinite;
+}
+
+.marquee span:hover {
+   animation-play-state: paused;
+}
+
+@keyframes marquee {
+ 0%   { transform: translate(-100%, 0); }
+ 100% { transform: translate(0%, 0); }
+}
